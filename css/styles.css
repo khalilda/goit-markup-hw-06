@@ -722,10 +722,10 @@ img {
 }
 
 .modal {
-    width: 500px;
-    min-height: 500px;
+    width: 408px;
+    min-height: 584px;
     padding: 20px;
-    background-color: #fff;
+    background: #fcfcfc;
     border-radius: 4px;
     position: absolute;
     top: 50%;
@@ -756,7 +756,6 @@ img {
 .modal-close-btn:focus {
     border-color: #4D5AE5;
     background-color: #4D5AE5;
-    /* background: #E7E9FC; */
 }
 
 
@@ -770,6 +769,15 @@ img {
 }
 /* /modal btn */
 
+
+
+.form-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 16px;
+}
 .form-group {
     margin-bottom: 20px;
 }
@@ -797,8 +805,29 @@ img {
 }
 
 .form-btn {
-    color: #303030;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    margin-left: 100px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    background: #4D5AE5;
+    border: transparent;
 }
+
+.form-btn:hover,
+.form-btn:focus {
+    background: var(--accent-color);
+    color: #FFFFFF;
+} 
+
+
 
 .form-label span{
     display: block;
@@ -817,10 +846,11 @@ img {
 }
 
 .forn-input:focus {
-    border-color: #FF6C00;
+    color: #4D5AE5;
+    border-color: #4D5AE5;
 }
 .form-input:focus + .form-icon{
-    fill: #FF6C00;
+    fill: #4D5AE5;
 }
 
 

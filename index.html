@@ -373,29 +373,40 @@
                     <use href="./images/symbol-defs.svg#icon-close-box"></use>
                 </svg>
             </button>
+            <h3 class="form-text">Leave your contacts and we will call you back</h3>
             <form class="modal-form form">
                 <div class="form-group">
                     <label class="form-label"> 
-                        <span>Enter your  name*</span>
+                        <span>Name</span>
                     <div class="form-control">
                         <input type="text" class="form-input" placeholder="Enter your name*" name="'fullname" required minlength="2" maxlength="20">
                     </label>
-                    <svg class="form-icon" width="16" height="16">
+                    <svg class="form-icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-user-black"></use>
                     </svg>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="phone">
-                        <span>Enter your phone number*</span>
+                    <label for="phone" class="form-label">
+                        <span>Phone</span>
+                    <div class="form-control">
+                            <input type="number" id="phone" class="form-input" placeholder="+(972)00-000-00-00*" name="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required>
                     </label>
-                    <input type="number" id="phone" class="form-input" placeholder="+{7}(000)000-00-00*" name="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required>
+                    <svg class="form-icon" width="18" height="24">
+                        <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                    </svg>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="email" class="form-label">
-                        <span>Enter your Email*</span>
+                        <span>Email</span>
+                    <div class="form-control">
+                        <input type="email" id="email" class="form-input" placeholder="Enter your email*" name="email" required>
+                        <svg class="form-icon" width="18" height="24">
+                            <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                        </svg>
                     </label>
-                    <input type="email" id="email" class="form-input" placeholder="Enter your email*" name="email" required>
+                    </div>
                 </div>
                 <div class="form-group">
                 <textarea name="message" class="form-text-area" placeholder="Message"></textarea>
