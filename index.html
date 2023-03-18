@@ -363,6 +363,28 @@
                     </li>
                 </ul> 
             </div>
+            <div class="footer-subs">
+                <p class="footer-text-two">
+                    <strong>Subscribe</strong>
+                </p>
+                <form class="footer-form">
+                    <div class="footer-form-input">
+                        <input 
+                        type="email" 
+                        id="email-footer" 
+                        class="footer-input" 
+                        placeholder="E-mail" 
+                        name="email-footer"
+                        required
+                        >
+                    </div>
+                    <button type="button" class="footer-btn btn">Subscribe
+                        <svg class="sub-icon" width="24" height="20">
+                            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -377,9 +399,17 @@
             <form class="modal-form form">
                 <div class="form-group">
                     <label class="form-label"> 
-                        <span>Name</span>
+                        <span class="span-info">Name</span>
                     <div class="form-control">
-                        <input type="text" class="form-input" placeholder="Enter your name*" name="'fullname" required minlength="2" maxlength="20">
+                        <input 
+                        type="text" 
+                        class="form-input" 
+                        placeholder="" 
+                        name="'fullname" 
+                        required 
+                        minlength="2" 
+                        maxlength="20"
+                        >
                     </label>
                     <svg class="form-icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-user-black"></use>
@@ -388,9 +418,17 @@
                 </div>
                 <div class="form-group">
                     <label for="phone" class="form-label">
-                        <span>Phone</span>
+                        <span class="span-info">Phone</span>
                     <div class="form-control">
-                            <input type="number" id="phone" class="form-input" placeholder="+(972)00-000-00-00*" name="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" required>
+                            <input 
+                            type="number" 
+                            id="phone" 
+                            class="form-input" 
+                            placeholder="" 
+                            name="phone" 
+                            pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" 
+                            required
+                            >
                     </label>
                     <svg class="form-icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-phone-black"></use>
@@ -399,9 +437,16 @@
                 </div>
                 <div class="form-group">
                     <label for="email" class="form-label">
-                        <span>Email</span>
+                        <span class="span-info">Email</span>
                     <div class="form-control">
-                        <input type="email" id="email" class="form-input" placeholder="Enter your email*" name="email" required>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        class="form-input" 
+                        placeholder="" 
+                        name="email" 
+                        required
+                        >
                         <svg class="form-icon" width="18" height="24">
                             <use href="./images/symbol-defs.svg#icon-email-black"></use>
                         </svg>
@@ -409,8 +454,33 @@
                     </div>
                 </div>
                 <div class="form-group">
-                <textarea name="message" class="form-text-area" placeholder="Message"></textarea>
+                    <label for="Comment" class="form-label">
+                        <span class="span-info">Comment</span>
+                        <textarea 
+                        name="Comment" 
+                        class="form-text-area" 
+                        placeholder="Text input"
+                        ></textarea>
+                    </label>
                 </div>
+                <div class="form-group">
+                    <input 
+                    type="checkbox" 
+                    class="form-checkbox visually-hidden" 
+                    id="policy" 
+                    name="policy" 
+                    />
+                    <label for="policy" class="form-label-checkbox"
+                    >
+                    <span>
+                        <svg class="form-checkbox-icon" width="10" height="8">
+                            <use href="./images/symbol-defs.svg#icon-checkbox-v"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the&nbsp;<a href="">Privacy Policy</a>
+                    </label
+                    >
+                </div>    
                     <button type="submit" class="form-btn btn">Send</button>
                 </form>
                 </div>
