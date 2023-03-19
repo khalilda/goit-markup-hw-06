@@ -652,7 +652,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #E7E9FC;
-    max-width: 300px;
+    max-width: 264px;
 }
 
 .footer-text-two {
@@ -728,12 +728,9 @@ img {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-    /* identical to box height, or 200% */
-
     display: flex;
     align-items: center;
     letter-spacing: 0.04em;
-
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -755,7 +752,6 @@ img {
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: transparent;
-    margin-right: 24px;
     margin-left: 24px;
     transition: border-color var(--transition-dur-and-func);
 }
@@ -800,6 +796,9 @@ img {
     width: 408px;
     min-height: 584px;
     padding: 20px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
     background: #fcfcfc;
     border-radius: 4px;
     position: absolute;
@@ -855,8 +854,9 @@ img {
 .form-text {
     display: flex;
     justify-content: center;
-    padding-top: 72px;
-    padding-bottom: 16px;
+    /* padding-top: 72px; */
+    /* padding-bottom: 16px; */
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -865,7 +865,7 @@ img {
     color: #2E2F42;
 }
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     width: 360px;
     transition: border-color var(--transition-dur-and-func);
 }
@@ -891,6 +891,7 @@ img {
     width: 169px;
     height: 56px;
     margin-left: 100px;
+    margin-top: 24px;
     cursor: pointer;
     background-color: var(--accent-color);
     color: #FFFFFF;
@@ -909,7 +910,6 @@ img {
 
 .form-label span{
     display: block;
-    margin-bottom: 10px;
 }
 
 
@@ -918,7 +918,6 @@ img {
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    margin-top: 14px;
     margin-bottom: 4px;
 }
 
@@ -929,7 +928,7 @@ img {
 }
 .form-icon {
     position: absolute;
-    left: 10px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -951,10 +950,11 @@ img {
 
 .form-text-area {
     display: block;
-    width: 100%;
-    min-height: 80px;
+    width: 360px;
+    height: 120px;
     border-radius: 4px;
     padding: 5px 10px;
+    padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: transparent;
     resize: none;
@@ -982,6 +982,7 @@ img {
     color: #757575;
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 .form-label-checkbox span {
@@ -995,7 +996,7 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    transition: background-color 0.35s fill 0.35s;
+    transition: background-color var(--transition-dur-and-func)
 }
 
 .form-checkbox:checked + .form-label-checkbox span {
@@ -1004,4 +1005,11 @@ img {
     border-color: #404BBF;
 }
 
+.form-label-checkbox:focus {
+    border-color: #404BBF;
+}
+
+.privacy-text-color {
+    color: rgba(77, 90, 229, 1);
+}
 /* /form */
