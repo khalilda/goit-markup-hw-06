@@ -698,7 +698,7 @@ img {
 }
 
 .footer-subs {
-    padding-left: 80px;
+    margin-left: auto;
 }
 
 .footer-form {
@@ -795,7 +795,7 @@ img {
 .modal {
     width: 408px;
     min-height: 584px;
-    padding: 20px;
+    padding-top: 72px;
     padding-right: 24px;
     padding-bottom: 24px;
     padding-left: 24px;
@@ -809,8 +809,8 @@ img {
 }
 .modal-close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 24px;
+    right: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -929,7 +929,7 @@ img {
 .form-icon {
     position: absolute;
     left: 16px;
-    top: 50%;
+    top: 67%;
     transform: translateY(-50%);
 }
 
@@ -949,11 +949,14 @@ img {
 
 
 .form-text-area {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
     display: block;
     width: 360px;
     height: 120px;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 12px 16px;
     padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: transparent;
