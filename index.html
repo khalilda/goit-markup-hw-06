@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 <body class="body">
     <!-- Head Text -->
@@ -31,6 +34,9 @@
             </address>
       </div>
     </header>
+
+
+
     <!-- Main -->
     <main>
         <section class="hero">
@@ -38,11 +44,10 @@
                 <h1 class="hero-head">Effective Solutions for Your Business</h1>
                 <button type="button" class="hero-btn" data-modal-open>Order Service</button>
             </div>
-            </section>
+             </section>
             <section  class="section">
                 <div class="container">
                     <h2 class="main-head-second visually-hidden">Quality</h2>
-                    <!-- <div class="startegies-item"> -->
                     <ul class="strategies-list list">
                         <li class="strategies-item">
                             <div class="section-two">
@@ -90,7 +95,6 @@
                         </li>
                     </ul>
                 </div>
-                   <!-- </div> -->
         </section>
         
             <!-- What do we do -->
@@ -99,13 +103,31 @@
                 <h2 class="main-head-second">What are we doing</h2>
                 <ul class="wwd-list list">
                     <li class="wwd-item">
-                        <img src="./images/img1.jpg" alt="computer" width="360">
+                        <img
+                        srcset="
+                        ./images/deskop-1x-min.jpg 1x, 
+                        ./images/desktop-2x-min.jpg 2x" 
+                        src="./images/img1.jpg" 
+                        alt="computer" 
+                        width="360">
                     </li>
                     <li class="wwd-item">
-                        <img src="./images/img2.jpg" alt="app" width="360">
+                        <img
+                        srcset="
+                        ./images/desktop-2-1x-min.jpg 1x, 
+                        ./images/desktop-2-2x-min.jpg 2x" 
+                        src="./images/img2.jpg" 
+                        alt="app" 
+                        width="360">
                     </li>
                     <li class="wwd-item">
-                        <img src="./images/img3.jpg" alt="telephone" width="360">
+                        <img
+                        srcset="
+                        ./images/desktop-3-1x-min.jpg 1x, 
+                        ./images/desktop-3-2x-min.jpg 2x"  
+                        src="./images/img3.jpg" 
+                        alt="telephone" 
+                        width="360">
                     </li>
                 </ul>
              </div>
@@ -115,11 +137,15 @@
 
             <!-- Our Team -->
             <section class="our-team">
-                <div class="container">
+                <div class="container container-sm">
                     <h2 class="main-head-second">Our Team</h2>
                 <ul class="our-team-list list">
                     <li class="our-team-item">
-                        <img src="./images/em1.jpg" alt="1st-employee" width="264">
+                        <img
+                        srcset="./images/our-team-1-1x-min.jpg 1x, ./images/our-team-1-2x-min.jpg 2x"
+                        src="./images/em1.jpg" 
+                        alt="1st-employee" 
+                        width="264">
                         <div class="our-team-sizes">
                             <h3 class="main-head-three">Mark Guerrero</h3>
                             <p class="main-text">Product Designer</p>
@@ -156,7 +182,13 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/em2.jpg" alt="2nd-employee" width="264">
+                        <img
+                        srcset="
+                        ./images/our-team-2-1x-min.jpg 1x,
+                        ./images/our-team-2-2x-min.jpg 2x"
+                         src="./images/em2.jpg" 
+                         alt="2nd-employee" 
+                         width="264">
                         <div class="our-team-sizes">
                             <h3 class="main-head-three">Tom Ford</h3>
                             <p class="main-text">Frontend Developer</p>
@@ -193,7 +225,13 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/em3.jpg" alt="3rd-employee" width="264">
+                        <img 
+                        srcset="
+                        ./images/our-team-3-1x-min.jpg 1x,
+                        ./images/our-team-3-2x-min.jpg 2x"
+                        src="./images/em3.jpg" 
+                        alt="3rd-employee" 
+                        width="264">
                         <div class="our-team-sizes">
                             <h3 class="main-head-three">Camila Garcia</h3>
                             <p class="main-text">Marketing</p>
@@ -230,7 +268,13 @@
                         </div>                            
                     </li>
                     <li class="our-team-item">
-                        <img src="./images/em4.jpg" alt="4th-employee" width="264">
+                        <img
+                        srcset="
+                        ./images/our-team-4-1x-min.jpg 1x,
+                        ./images/our-team-4-2x-min.jpg 2x"
+                        src="./images/em4.jpg" 
+                        alt="4th-employee" 
+                        width="264">
                         <div class="our-team-sizes">
                             <h3 class="main-head-three">Daniel Wilson</h3>
                             <p class="main-text">UI Designer</p>
@@ -388,7 +432,12 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+
+
+    <!-- modal-btn -->
+
+
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-btn-icon" width="8" height="8">
@@ -486,7 +535,8 @@
                 </form>
             </div>
         </div>
-    /div>
+    /div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
