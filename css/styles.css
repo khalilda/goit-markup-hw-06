@@ -37,7 +37,7 @@ ul {
 
 .container { 
     width: 100%; 
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     padding-left: 15px; 
     padding-right: 15px; 
     margin-left: auto; 
